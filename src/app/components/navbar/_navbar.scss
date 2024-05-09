@@ -28,7 +28,8 @@
     a:hover {
       color: commons.$primary-color;
     }
-    @media (max-width: 767px) {
+
+    @media (max-width: commons.$tablets-width) {
       display: none;
     }
   }
@@ -41,7 +42,7 @@
       height: 40px;
       color: commons.$primary-color;
     }
-    @media (min-width: 767px) {
+    @media (min-width: commons.$tablets-width) {
       display: none;
     }
   }
@@ -55,9 +56,6 @@
     background-color: commons.$primary-color;
     transition: ease-in-out 5s;
 
-    @media (max-width: 500px) {
-      width: 60vw;
-    }
     .routes {
       display: flex;
       flex-direction: column;
@@ -80,8 +78,14 @@
         height: 30px;
       }
     }
-    @media (min-width: 767px) {
+    @media (min-width: commons.$tablets-width) {
       display: none;
     }
+    @media (max-width: commons.$extra-small-width) {
+      width: 60vw;
+    }
+  }
+  @media (max-width: commons.$extra-small-width) {
+    padding: 0 2rem;
   }
 }
