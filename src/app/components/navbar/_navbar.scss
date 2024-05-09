@@ -1,0 +1,37 @@
+@use "@/app/commons";
+
+.navbar {
+  position: sticky;
+  top: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  height: 100px;
+  padding: 0 4rem;
+
+  .alien-home {
+    font-size: 40px;
+    text-decoration: none;
+  }
+  .routes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    a {
+      text-decoration: none;
+      color: #141414;
+      font-size: 18px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    a:hover {
+      color: commons.$primary-color;
+    }
+  }
+  .hamburger {
+    width: 40px;
+    height: 40px;
+    color: commons.$primary-color;
+  }
+}
