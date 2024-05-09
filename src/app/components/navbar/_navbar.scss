@@ -50,10 +50,14 @@
     left: 0;
     top: 80px;
     height: 100vh;
-    width: 25vw;
+    width: 40vw;
     padding: 2rem;
     background-color: commons.$primary-color;
     transition: ease-in-out 5s;
+
+    @media (max-width: 500px) {
+      width: 60vw;
+    }
     .routes {
       display: flex;
       flex-direction: column;
