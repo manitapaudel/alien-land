@@ -11,12 +11,15 @@ const Hero = () => {
         <p>Sign up now to join the list!</p>
         <button className="sign-up-btn">Sign Up</button>
       </div>
-      <Image
-        src="/images/spaceship.svg"
-        alt="A spaceship where an alien is being taken in and another one standing by"
-        width={400}
-        height={400}
-      />
+      <div className="image-container">
+        <Image
+          src="/images/spaceship.svg"
+          alt="A spaceship where an alien is being taken in and another one standing by"
+          // width={400}
+          // height={400}
+          fill
+        />
+      </div>
     </div>
   );
 };

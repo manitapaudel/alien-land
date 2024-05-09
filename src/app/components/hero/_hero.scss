@@ -40,4 +40,16 @@
     margin-top: 2rem;
     cursor: pointer;
   }
+  .image-container {
+    position: relative;
+    height: 500px;
+    width: 100%;
+
+    @media (min-width: commons.$laptops-width) {
+      width: 350px;
+    }
+    @media (min-width: commons.$large-devices-width) {
+      width: 500px;
+    }
+  }
 }
