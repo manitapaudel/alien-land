@@ -15,8 +15,6 @@ const Hero = () => {
         <Image
           src="/images/spaceship.svg"
           alt="A spaceship where an alien is being taken in and another one standing by"
-          // width={400}
-          // height={400}
           fill
         />
       </div>
