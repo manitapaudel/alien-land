@@ -24,7 +24,7 @@ const Navbar = () => {
         <Link href="/">Products</Link>
         <Link href="/">Services</Link>
       </section>
-      <button className="toggle-menu" onClick={handleToggleMenu}>
+      <button className="toggle-drawer-btn" onClick={handleToggleMenu}>
         {openMenu ? (
           <HamburgerOpen className="hamburger" />
         ) : (
