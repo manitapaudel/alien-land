@@ -4,9 +4,9 @@ import Link from "next/link";
 import { useState } from "react";
 
 import Hamburger from "@/app/icons/hamburger";
-import "./_navbar.scss";
 import HamburgerOpen from "@/app/icons/hamburger-open";
 import Close from "@/app/icons/close";
+import "./_navbar.scss";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);

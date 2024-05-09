@@ -23,7 +23,8 @@
       text-decoration: none;
       color: #141414;
       font-size: 18px;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: bold;
     }
     a:hover {
       color: commons.$primary-color;
@@ -60,8 +61,11 @@
       display: flex;
       flex-direction: column;
       align-items: start;
-      a:hover {
+      a {
         color: #ffffff;
+      }
+      a:hover {
+        color: #141414;
       }
     }
     .close-drawer-btn {
