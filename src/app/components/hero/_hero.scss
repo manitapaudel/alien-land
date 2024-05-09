@@ -2,10 +2,31 @@
 
 .hero-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
   margin-top: 2rem;
-  padding: 4rem 0;
+  padding: 2rem 1rem;
   font-family: "Courier New", Courier, monospace;
+
+  @media (min-width: commons.$tablets-width) {
+    padding: 4rem 0;
+  }
+
+  @media (min-width: commons.$laptops-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  h1 {
+    font-size: 48px;
+    color: commons.$primary-color;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 24px;
+  }
 
   .sign-up-btn {
     color: #ffffff;
