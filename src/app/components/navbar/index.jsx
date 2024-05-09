@@ -31,23 +31,16 @@ const Navbar = () => {
           <Hamburger className="hamburger" />
         )}
       </button>
-      {openMenu ? (
-        <section className="drawer-menu">
-          <button
-            className="close-drawer-btn"
-            onClick={() => setOpenMenu(false)}
-          >
-            <Close className="close-icon" />
-          </button>
-          <section className="routes">
-            <Link href="/">Home</Link>
-            <Link href="/">Products</Link>
-            <Link href="/">Services</Link>
-          </section>
+      <section className={`drawer-menu ${openMenu ? "show" : ""}`}>
+        <button className="close-drawer-btn" onClick={() => setOpenMenu(false)}>
+          <Close className="close-icon" />
+        </button>
+        <section className="routes">
+          <Link href="/">Home</Link>
+          <Link href="/">Products</Link>
+          <Link href="/">Services</Link>
         </section>
-      ) : (
-        ""
-      )}
+      </section>
     </nav>
   );
 };

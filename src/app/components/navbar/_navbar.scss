@@ -56,7 +56,8 @@
     width: 40vw;
     padding: 2rem;
     background-color: commons.$primary-color;
-    transition: ease-in-out 5s;
+    transform: translateX(-100vw);
+    transition: ease-in-out 0.5s;
 
     .routes {
       display: flex;
@@ -89,6 +90,9 @@
     @media (max-width: commons.$extra-small-width) {
       width: 60vw;
     }
+  }
+  .show {
+    transform: translateX(0);
   }
   @media (max-width: commons.$extra-small-width) {
     padding: 0 2rem;
