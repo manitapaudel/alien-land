@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  height: 100px;
+  height: 80px;
   padding: 0 4rem;
 
   .alien-home {
@@ -29,9 +29,46 @@
       color: commons.$primary-color;
     }
   }
-  .hamburger {
-    width: 40px;
-    height: 40px;
-    color: commons.$primary-color;
+  .toggle-menu {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    .hamburger {
+      width: 40px;
+      height: 40px;
+      color: commons.$primary-color;
+    }
+  }
+  .drawer-menu {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    height: 100vh;
+    width: 25vw;
+    padding: 2rem;
+    background-color: commons.$primary-color;
+    transition: ease-in-out 5s;
+    .routes {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      a:hover {
+        color: #ffffff;
+      }
+    }
+    .close-drawer-btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: #ffffff;
+      margin-right: auto;
+      .close-icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 }
