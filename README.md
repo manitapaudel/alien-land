@@ -1,4 +1,4 @@
-# :alien: Alien Land
+<h1 align="center"> :alien: Alien Land </h1>
 
 ## Introduction
 Alien Land is just another landing page that is responsive on various screen sizes, but it is different from others, in a way that it could be saving lives. You can thank me later!
